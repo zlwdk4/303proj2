@@ -16,7 +16,7 @@ public:
 		else
 		{
 			queList.push_front(itemToBePushed);
-			queList.sort();
+			
 		}
 
 		numItems++;
@@ -26,11 +26,13 @@ public:
 	{
 		if (numItems == 0)
 			return;
+		queList.sort();
 		queList.pop_back();
 		numItems--;
 	}
 	Item_Type& top()
 	{
+		queList.sort();
 		return queList.back();
 	}
 	bool empty() {
