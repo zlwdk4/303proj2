@@ -16,7 +16,6 @@ public:
 		else
 		{
 			queList.push_front(itemToBePushed);
-			
 		}
 
 		numItems++;
