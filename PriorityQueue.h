@@ -1,7 +1,6 @@
 #pragma once
 #include <list>
 
-//does the list update when an item's priotity changes
 
 template<typename Item_Type>
 class PriorityQueue
