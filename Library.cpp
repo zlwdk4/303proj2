@@ -6,6 +6,7 @@ void Library::addBook(string bookName)
 {
 	//add the book to the list of books
 	Book bookToAdd = Book(bookName);
+
 	toBeCirc.push_back(bookToAdd);
 
 	//if there are no employees, just return.

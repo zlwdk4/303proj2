@@ -16,7 +16,7 @@ public:
 	list<Book> toBeCirc; ////!!!!!!!!!!!moved here for testing
 
 private:
-	
+
 	list<Book> archived;
 	list<Employee> empList;
 

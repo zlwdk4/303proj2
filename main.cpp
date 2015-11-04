@@ -11,12 +11,12 @@ int main()
 {
 
 	Library library;
-	for (int i = 0; i < 333; i++) {
+	for (int i = 0; i < 100; i++) {
 		string rs = randString(10);
 		library.addBook(rs);
 	}
 
-	for (int i = 0; i < 23; i++) {
+	for (int i = 0; i < 10; i++) {
 		string re = randString(8);
 		library.addEmployee(re);
 	}
@@ -38,7 +38,7 @@ int main()
 
 	}
 
-	
+
 
 
 

@@ -1,4 +1,3 @@
-
 #include <list>
 #include "Book.h"
 #include "Employee.h"
