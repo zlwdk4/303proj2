@@ -13,8 +13,10 @@ public:
 	void addEmployee(string name);
 	void circulateBook(string title, Date circDate);
 	void passToNextEmployee(string title, Date passDate);
+	list<Book> toBeCirc; ////!!!!!!!!!!!moved here for testing
+
 private:
-	list<Book> toBeCirc;
+	
 	list<Book> archived;
 	list<Employee> empList;
 
