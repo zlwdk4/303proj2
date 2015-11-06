@@ -25,14 +25,32 @@ public:
 	{
 		if (numItems == 0)
 			return;
-		queList.sort();
-		queList.pop_back();
-		numItems--;
+		//queList.sort(); // find max    not sort
+		list<Item_Type>::iterator iter = queList.begin(), curMax = queList.begin();
+		for (iter; iter != queList.end(); iter++) {
+			if (*iter < *curMax)
+				continue;
+			else
+				curMax = iter;
+		}
+		queList.erase(curMax);
+	//	queList.pop_back();
+		//numItems--;
 	}
 	Item_Type& top()
 	{
-		queList.sort();
-		return queList.back();
+		//queList.sort();   // find max    not sort
+		
+		//return queList.back();
+
+		list<Item_Type>::iterator iter = queList.begin(), curMax = queList.begin();
+		for (iter; iter != queList.end(); iter++) {
+			if (*iter < *curMax)
+				continue;
+			else
+				curMax = iter;
+		}
+		return *curMax;
 	}
 	bool empty() {
 		if (numItems == 0)

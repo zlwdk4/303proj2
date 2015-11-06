@@ -18,6 +18,6 @@ public:
 private:
 
 	list<Book> archived;
-	list<Employee> empList;
+	list<Employee> empList; //books and employees should be pointers...
 
 };

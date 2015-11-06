@@ -46,3 +46,5 @@ int main()
 	system("pause");
 	return 0;
 }
+
+//put logic in library class rather than book
